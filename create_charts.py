@@ -4,11 +4,14 @@ import matplotlib.pyplot as plt
 import os
 
 
-DATA_DIR = os.path.expanduser("~/projects/flask_my_page/static/scraping-data/daily_sale_development_investments/")
+DATA_DIR = os.path.expanduser(
+    "~/projects/flask_my_page/static/scraping-data/"
+    "daily_sale_development_investments/"
+)
 os.makedirs(DATA_DIR, exist_ok=True)
 
-def bar_chart(identifier, data):
 
+def bar_chart(identifier, data):
     dates = data.keys()
     hits = data.values()
 
@@ -25,7 +28,6 @@ def bar_chart(identifier, data):
     plt.savefig(plot_image_path)
     plt.close()
     print("PLOT", plot_image_path)
-
 
 
 os.makedirs(config.PLOTS_DIRECTORY, exist_ok=True)

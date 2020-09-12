@@ -49,4 +49,6 @@ for entry in config.LIST_OF_DEVELOPERS:
     with open(config.DATA_FILE, "w+") as json_file:
         json.dump(data, json_file, indent=4, sort_keys=True)
 
-    print("%s\t total_hits %s\t%s" % (total_investments, total_hits, identifier))
+    print("%s\t total_hits %s\t%s" % (total_investments,
+                                      total_hits,
+                                      identifier))

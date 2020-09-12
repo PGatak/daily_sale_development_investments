@@ -1,2 +1,5 @@
 bs4
 matplotlib
+requests
+lxml
+
